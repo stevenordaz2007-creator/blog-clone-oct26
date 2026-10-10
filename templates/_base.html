@@ -7,8 +7,8 @@
 </head>
 <body>
     <header>
-        <h1>Blog</h1>
-    <header>
+        <a href="{% url 'post_list' %}"><h1>Blog</h1></a>
+    </header>
     <main></main>
         {% block content %}
         {% for publication in post_list %}
