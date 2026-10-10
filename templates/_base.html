@@ -9,8 +9,9 @@
     <header>
         <a href="{% url 'post_list' %}"><h1>Blog</h1></a>
     </header>
-    <main></main>
-        {% block content %}
+    </main>
+    <a href="{% url 'post_create' %}">Create New Post</a>
+    {% block content %}
         {% for publication in post_list %}
             <li>
                 <h2>{{ publication.title }}</h2>
