@@ -6,4 +6,5 @@
         <p>By {{ post.author.username }}</p>
         <p>{{ post.content }}</p>
         <a href="{% url 'post_update' post.pk %}">Edit Post</a>
+        <a href="{% url 'post_delete' post.pk %}">Delete Post</a>
 {% endblock content %}
