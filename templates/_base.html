@@ -20,7 +20,8 @@
                 {% csrf_token %}
                 <button type="submit">Logout</button>
         {% else %}
-            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'login' %}">Login</a> |
+            <a href="{% url 'signup' %}">Sign Up</a> 
         {% endif %}
 
         {% block content %}
